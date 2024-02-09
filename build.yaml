@@ -6,9 +6,9 @@ build_from:
   armv7: "ghcr.io/home-assistant/armv7-base:3.15"
   i386: "ghcr.io/home-assistant/i386-base:3.15"
 labels:
-  org.opencontainers.image.title: "Tesla HTTP Proxy add-on"
-  org.opencontainers.image.description: "Proxy requests for Tesla Fleet API"
-  org.opencontainers.image.source: "https://github.com/llamafilm/tesla-http-proxy-addon"
+  org.opencontainers.image.title: "Tesla BLE add-on"
+  org.opencontainers.image.description: "Control Tesla via BLE"
+  org.opencontainers.image.source: "https://github.com/danielnitsche/tesla-ble-home-assistant"
   org.opencontainers.image.licenses: "MIT"
 args:
   TEMPIO_VERSION: "2021.09.0"
