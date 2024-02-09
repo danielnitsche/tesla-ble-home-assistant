@@ -1,8 +1,8 @@
-name: "Tesla HTTP Proxy"
+name: "Tesla BLE Home Assistant"
 version: "1.1.2"
 slug: "tesla_http_proxy"
-description: "Proxy requests for Tesla Fleet API"
-url: "https://github.com/llamafilm/tesla-http-proxy-addon/tree/main/tesla_http_proxy"
+description: "Tesla BLE Home Assistant"
+url: "https://github.com/danielnitsche/tesla-ble-home-assistant/tree/main/tesla_http_proxy"
 arch:
   - armhf
   - armv7
@@ -14,15 +14,11 @@ map:
   - share:rw
 startup: services
 options:
-  client_id: ""
-  client_secret: ""
+  key_name: ""
   vin: ""
-  domain: ""
 schema:
-  client_id: "str"
-  client_secret: "password"
+  key_name: "str"
   vin: "match(^[A-Z0-9]{17}$)"
-  domain: "match(^[a-z0-9-.]{1,253}$)"
 ingress: true
 panel_icon: mdi:forward
 backup_exclude: 
@@ -30,4 +26,4 @@ backup_exclude:
   - /data/password-store
 hassio_api: true
 stage: experimental
-image: "ghcr.io/llamafilm/tesla_http_proxy_{arch}"
+image: "ghcr.io/danielnitsche/tesla_http_proxy_{arch}"
