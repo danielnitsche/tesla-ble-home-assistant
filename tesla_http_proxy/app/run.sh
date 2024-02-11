@@ -17,7 +17,7 @@ else
   openssl ec -in private.pem -pubout > public.pem
   printf "\n### Requesting vehicle access ###\n"
   printf "\n### Tap your NFC card or keyfob on the center console and then tap 'Confirm' on the vehicle screen. ###\n"
-  /root/bin/tesla-control -vin $VIN -ble add-key-request public.pem owner cloud_key
+  /root/go/bin/tesla-control -vin $VIN -ble add-key-request public.pem owner cloud_key
   # TODO check for success
   mkdir -p /share/tesla
   cp private.pem /share/tesla/private.pem
