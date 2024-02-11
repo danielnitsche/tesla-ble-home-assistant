@@ -1,5 +1,5 @@
 name: "Tesla BLE Home Assistant"
-version: "0.0.1"
+version: "0.0.3"
 slug: "tesla_http_proxy"
 description: "Tesla BLE Home Assistant"
 url: "https://github.com/danielnitsche/tesla-ble-home-assistant/tree/main/tesla_http_proxy"
