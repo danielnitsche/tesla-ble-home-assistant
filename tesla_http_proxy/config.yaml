@@ -1,5 +1,5 @@
 name: "Tesla BLE Home Assistant"
-version: "0.0.3"
+version: "0.0.5"
 full_access: true
 slug: "tesla_http_proxy"
 description: "Tesla BLE Home Assistant"
